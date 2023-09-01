@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+// import React from 'react';
+// import styled from 'styled-components';
 
-const BackgroundWrapper = styled.div`
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-`;
+// const BackgroundWrapper = styled.div`
+//   background-color: black;
+//   width: 100%;
+//   height: auto;
+// `;
 
-function Background() {
-  return <BackgroundWrapper />;
-}
+// function Background() {
+//   return <BackgroundWrapper />;
+// }
 
-export default Background;
+// export default Background;
