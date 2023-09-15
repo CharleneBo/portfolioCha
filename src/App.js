@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import GradientBackground from './components/GradientBackground';
 import StarryBackground from './components/StarryBackground';
 import Header from './components/Header/Header';
-import PhotoSommaire from './components/PhotoSommaire/Sommaire';
+import PresentationSection from './components/Presentation/PresentationSection';
 
 const AppWrapper = styled.div`
   ${'' /* background-color: black;
@@ -17,7 +17,7 @@ function App() {
       <GradientBackground />
       <StarryBackground />
       <Header />
-      <PhotoSommaire />
+      <PresentationSection />
     </AppWrapper>
 
   );
