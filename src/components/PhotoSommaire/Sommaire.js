@@ -1,26 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import AvatarImage from '../../image/chatsorcier.png';;
+import AvatarImage from '../../image/chatsorcier.png';
 
 const MainBlock = styled.div`
   display: flex;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 `;
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   padding: 20px;
 `;
 
 const LeftBlock = styled.div`
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1rem;
 `;
 
 const Avatar = styled.img`
-  
   margin-left: 3rem;
   max-width: 100%;
   height: auto;
@@ -29,53 +28,28 @@ const Avatar = styled.img`
 
 const RightBlock = styled.div`
   flex: 2;
-  background-color: rgba(  105, 63, 131, 0.4);
-  
+  background-color: rgba(105, 63, 131, 0.4);
+  backdrop-filter: blur(3px);
 `;
 
-const Sommaire = styled.div`
-  padding: 10px;
-  border-radius: 5px;
+const Presentation = styled.div`
+  padding: 20px;
+  border-radius: 2px;
 `;
 
-const SommaireTitle = styled.h3`
+const PresentationTitle = styled.h3`
   font-size: 36px;
   color: #ffffff;
+  margin-top: 0;
+  font-weight: 400;
 `;
 
-const SommaireList = styled.ul`
-  list-style: none;
-  padding: 0;
-`;
-
-const SommaireItem = styled.li`
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 26px;
-`;
-
-const Icon = styled.span`
-  margin-right: 5px;
-`;
-
-const CVBlock = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  color: white;
-`;
-
-const CVText = styled.p`
-  margin-right: 10px;
-  font-weight: bold;
+const PresentationText = styled.div`
   font-size: 30px;
-`;
-
-const CVArrow = styled.span`
-  font-size: 24px;
-  cursor: pointer;
+  color: #ffffff;
+  word-wrap: break-word; 
+  max-width: 100%; 
+  font-weight: 200;
 `;
 
 function PhotoSommaire() {
@@ -87,27 +61,12 @@ function PhotoSommaire() {
           <Avatar src={AvatarImage} alt="Avatar" />
         </LeftBlock>
         <RightBlock>
-          <Sommaire>
-            <SommaireTitle>Sommaire :</SommaireTitle>
-            <SommaireList>
-              <SommaireItem>
-                <Icon>🌟</Icon> Présentation
-              </SommaireItem>
-              <SommaireItem>
-                <Icon>🌟</Icon> Compétences
-              </SommaireItem>
-              <SommaireItem>
-                <Icon>🌟</Icon> Projets
-              </SommaireItem>
-              <SommaireItem>
-                <Icon>🌟</Icon> Contact
-              </SommaireItem>
-            </SommaireList>
-            <CVBlock>
-              <CVArrow>➡️</CVArrow>
-              <CVText>🌟 CV 🌟</CVText>
-            </CVBlock>
-          </Sommaire>
+          <Presentation>
+            <PresentationTitle>Présentation</PresentationTitle>
+            <PresentationText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </PresentationText>
+          </Presentation>
         </RightBlock>
       </Wrapper>
     </MainBlock>
