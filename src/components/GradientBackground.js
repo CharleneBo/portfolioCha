@@ -13,18 +13,18 @@ const GradientAnimation = keyframes`
 const GradientWrapper = styled.div`
   background: linear-gradient(
     to right,
-    #000033,
-    #000033,
-    #000066,
-    #4B0082,
-    #4B0082,
-    #000066,
-    #000066,
-    #4B0082,
-    #4B0082,
-    #000066,
-    #000033,
-    #000033
+    #7E1967,
+    #7E1967,
+    #39007B,
+    #5C0D71,
+    #5C0D71,
+    #A22192,
+    #A22192,
+    #5C0D71,
+    #5C0D71,
+    #39007B,
+    #7E1967,
+    #7E1967
   );
   background-size: 800% 100%; /* Ajustez la taille pour couvrir l'écran complet */
   width: 100vw;
@@ -33,6 +33,7 @@ const GradientWrapper = styled.div`
   top: 0;
   left: 0;
   animation: ${GradientAnimation} 20s linear infinite;
+  z-index: -1;
 `;
 
 function GradientBackground() {
