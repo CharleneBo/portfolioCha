@@ -1,0 +1,7 @@
+/* File: font.css */
+@font-face {
+    font-family: 'FrankRuhlLibre';
+    src: local('FrankRuhLibre'),
+         url('./fonts/FrankRuhlLibre.ttf') format('ttf'),
+         url('./fonts/FrankRuhlLibre.ttf') format('ttf');
+}

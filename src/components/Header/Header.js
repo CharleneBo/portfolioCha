@@ -11,26 +11,13 @@ const StyledHeader = styled.header`
 
 const HeaderBackground = styled.header`
   display: flex;
+  height: 5em;
   flex-direction: row; 
-  justify-content: space-between;
-  height: 5rem;
-  background: linear-gradient(to right, rgba(36, 36, 36, 0.2) 0%, rgba(179, 179, 179, 0.788) 50%, rgba(255, 255, 255, 0.788) 100%);
+  justify-content: space-around;
   backdrop-filter: blur(3px); 
 `;
 
 const HeaderText = styled.div`
-  font-size: 2em;
-  color: white; 
-  margin: auto 0; 
-`;
-
-const HeaderSkills = styled.div`
-font-size: 2em;
-color: white; 
-margin: auto 0; 
-`;
-
-const HeaderPresentation = styled.div`
   font-size: 2em;
   color: white; 
   margin: auto 0; 
@@ -43,29 +30,32 @@ const StyleTitleHeader = styled.header`
 `;
 
 const PortfolioTitle = styled.h1`
+  font-family: 'FrankRuhLibre', serif;
   font-size: 96px;
   color: #ffffff;
-  margin: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 `;
 
 const SubTitle = styled.h2`
   font-size: 36px;
-  font-weight: 400;
+  font-weight: 200;
   color: #ffffff;
-  margin: 10px; 
+  margin: 0; 
 `;
 
 function Header() {
   return (
     <StyledHeader>
       <HeaderBackground>
-      <HeaderText>Charlito Croutelliènne</HeaderText>
-      <HeaderPresentation>Présentation</HeaderPresentation>
-      <HeaderSkills>Compétences</HeaderSkills>
+      <HeaderText>Présentation</HeaderText>
+      <HeaderText>Compétences</HeaderText>
+      <HeaderText>Projets</HeaderText>
+      <HeaderText>Contact</HeaderText>
       </HeaderBackground>
       <StyleTitleHeader>
-      <PortfolioTitle>Portfolio</PortfolioTitle>
-      <SubTitle>Présentation de mes compétences</SubTitle>
+      <PortfolioTitle>Charlène Boccha</PortfolioTitle>
+      <SubTitle>Frontend developer</SubTitle>
       </StyleTitleHeader>
     </StyledHeader>
     
