@@ -52,7 +52,7 @@ const PresentationText = styled.div`
   font-weight: 200;
 `;
 
-function PhotoSommaire() {
+function PresentationSection() {
   return (
     <MainBlock>
       <Wrapper>
@@ -73,4 +73,4 @@ function PhotoSommaire() {
   );
 }
 
-export default PhotoSommaire;
+export default PresentationSection;
