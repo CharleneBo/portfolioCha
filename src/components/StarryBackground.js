@@ -18,7 +18,7 @@ const StarWrapper = styled.div.attrs((props) => ({
     opacity: props.disappear ? 0 : (props.dim ? 0.5 : 1),
   },
 }))`
-  position: fixed;
+  position: absolute;
   background-color: white;
   border-radius: 50%;
   animation: ${(props) => (props.disappear ? fadeOutAnimation : '')} 1s;
@@ -28,8 +28,8 @@ function StarryBackground() {
   const [stars, setStars] = useState([]);
 
   const generateStar = () => {
-    const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
+    const x = Math.random() * 100; // Largeur du bandeau du header en pourcentage
+    const y = Math.random() * 100; // Hauteur du bandeau du header en pourcentage
     const size = Math.random() * 7 + 2;
     const dim = Math.random() < 0.3; // 30% chance of dim star
     const id = uuidv4();
@@ -55,7 +55,7 @@ function StarryBackground() {
   }, [stars]);
 
   return (
-    <>
+    <div style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', overflow: 'hidden' }}>
       {stars.map((star) => (
         <StarWrapper
           key={star.id}
@@ -63,12 +63,12 @@ function StarryBackground() {
           dim={star.dim}
           disappear={star.disappear}
           style={{
-            top: star.y,
-            left: star.x,
+            top: `${star.y}%`,
+            left: `${star.x}%`,
           }}
         />
       ))}
-    </>
+    </div>
   );
 }
 

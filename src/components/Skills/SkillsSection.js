@@ -68,9 +68,6 @@ const VerticalLine = styled.div`
   border-left: 6px solid #ffffff;
 `;
 
-const OtherSkillBlock = styled.div`
-
-`;
 
 
 function SkillsSection() {
