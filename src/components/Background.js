@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const BackgroundWrapper = styled.div`
-  background-color: #333; 
+  background-color: #bdacd1; 
   position: fixed;
   top: 0;
   left: 0;

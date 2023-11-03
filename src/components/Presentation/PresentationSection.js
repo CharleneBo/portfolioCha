@@ -20,6 +20,7 @@ const LeftBlock = styled.div`
 `;
 
 const Avatar = styled.img`
+  margin-top: 4rem;
   margin-left: 3rem;
   max-width: 100%;
   height: auto;
@@ -28,7 +29,7 @@ const Avatar = styled.img`
 
 const RightBlock = styled.div`
   flex: 2;
-  background-color: rgba(105, 63, 131, 0.4);
+  background-color: #2a2a2a;
   backdrop-filter: blur(3px);
 `;
 
@@ -39,14 +40,14 @@ const Presentation = styled.div`
 
 const PresentationTitle = styled.h3`
   font-size: 36px;
-  color: #ffffff;
+  color: #dadada;
   margin-top: 0;
   font-weight: 400;
 `;
 
 const PresentationText = styled.div`
   font-size: 30px;
-  color: #ffffff;
+  color: #dadada;
   word-wrap: break-word; 
   max-width: 100%; 
   font-weight: 200;

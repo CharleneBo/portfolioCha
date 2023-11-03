@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import OtherSkillSection from './OtherSkillSection'
 
 const MainBlock = styled.div`
   display: flex;
-  
   margin-top: 1rem;
 `;
 
@@ -17,28 +15,26 @@ const Wrapper = styled.div`
 `;
 
 const SkillBlock = styled.div`
-  flex: 2;
-  background-color: rgba(105, 63, 131, 0.4);
-  backdrop-filter: blur(3px);
+  background-color: #2a2a2a;
 `;
 
 const Skills = styled.div`
-  padding: 20px;
+  padding: 1rem;
   border-radius: 2px;
 `;
 
 const MainSkillTitle = styled.div`
   font-size: 36px;
   font-weight: bold;
-  color: #ffffff;
-  margin-top: 0;
+  color: #dadada;
+  padding-bottom:1rem ;
   text-align: center;
+  border-bottom: 2px solid #fff;
 `;
 
 const SkillDoubleBlock = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
 `;
 
 const SkillFrontBlock = styled.div`
@@ -49,15 +45,19 @@ const SkillFrontBlock = styled.div`
 const SkillBackBlock = styled.div`
 `;
 
+const OtherSkillBlock = styled.div`
+ 
+`;
+
 const SkillTitle = styled.h3`
   font-size: 36px;
-  color: #ffffff;
+  color: #dadada;
   margin-bottom: 10px;
 `;
 
 const SkillText = styled.div`
   font-size: 30px;
-  color: #ffffff;
+  color: #dadada;
 `;
 
 const VerticalLine = styled.div`
@@ -65,7 +65,7 @@ const VerticalLine = styled.div`
   content: '';
   top: 80px; 
   bottom: 10px; 
-  border-left: 6px solid #ffffff;
+  border-left: 6px solid #dadada;
 `;
 
 
@@ -78,7 +78,6 @@ function SkillsSection() {
           <Skills>
             <MainSkillTitle>Compétences</MainSkillTitle>
             <SkillDoubleBlock>
-            <VerticalLine />
               <SkillFrontBlock>
                 <SkillTitle>Front-end</SkillTitle>
                 <SkillText>- CSS</SkillText>
@@ -94,10 +93,18 @@ function SkillsSection() {
                 <SkillText>- Python</SkillText>
                 <SkillText>- JS</SkillText>
               </SkillBackBlock>
+              <OtherSkillBlock>
+                <SkillTitle>Autres</SkillTitle>
+                <SkillText>- Bash</SkillText>
+                <SkillText>- VScode</SkillText>
+                <SkillText>- Github</SkillText>
+                <SkillText>- pgAdming/mangooseDB</SkillText>
+                <SkillText>- Essai maquette</SkillText>
+                <SkillText>- Agilité</SkillText>
+              </OtherSkillBlock>
             </SkillDoubleBlock>
           </Skills>
         </SkillBlock>
-        <OtherSkillSection />
       </Wrapper>
     </MainBlock>
   );
