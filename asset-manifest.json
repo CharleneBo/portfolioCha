@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolioCha/static/css/main.bf25a4f5.css",
-    "main.js": "/portfolioCha/static/js/main.8c974acb.js",
+    "main.js": "/portfolioCha/static/js/main.981a2e4f.js",
     "static/js/787.526a1793.chunk.js": "/portfolioCha/static/js/787.526a1793.chunk.js",
     "static/media/FrankRuhlLibre.ttf": "/portfolioCha/static/media/FrankRuhlLibre.c91c4c32f5c68a3d747e.ttf",
     "static/media/chatsorcier.png": "/portfolioCha/static/media/chatsorcier.3cc3444c7e34288eceb0.png",
     "index.html": "/portfolioCha/index.html",
     "main.bf25a4f5.css.map": "/portfolioCha/static/css/main.bf25a4f5.css.map",
-    "main.8c974acb.js.map": "/portfolioCha/static/js/main.8c974acb.js.map",
+    "main.981a2e4f.js.map": "/portfolioCha/static/js/main.981a2e4f.js.map",
     "787.526a1793.chunk.js.map": "/portfolioCha/static/js/787.526a1793.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf25a4f5.css",
-    "static/js/main.8c974acb.js"
+    "static/js/main.981a2e4f.js"
   ]
 }
