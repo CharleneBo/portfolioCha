@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  padding: 20px;
+  padding: 1rem;
 `;
 
 const SkillBlock = styled.div`
@@ -24,7 +24,7 @@ const Skills = styled.div`
 `;
 
 const MainSkillTitle = styled.div`
-  font-size: 36px;
+  font-size: 2.6rem;
   font-weight: bold;
   color: #dadada;
   padding-bottom:1rem ;

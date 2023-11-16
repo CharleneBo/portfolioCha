@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 20px;
+  padding: 1rem;
 `;
 
 const LeftBlock = styled.div`

@@ -21,7 +21,7 @@ const StyleTitleHeader = styled.header`
 
 const PortfolioTitle = styled.h1`
   font-family: 'FrankRuhLibre', serif;
-  font-size: 96px;
+  font-size: 5.2rem;
   color: #dadada;
   margin-top: 3rem;
   margin-bottom: 1rem;
